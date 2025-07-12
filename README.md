@@ -26,18 +26,14 @@ An end-to-end Machine Learning project for predicting students’ math scores ba
    - Scripts are modular (`model_trainer.py`) and save trained model as a `.pkl` file in `artifacts/`.
    - Includes evaluation logic: *MAE*, *RMSE*, *R²*.
 
-5. **Hyperparameter Tuning**  
-   - Ridge Regression tuned using `GridSearchCV` to find optimal alpha.
-   - Automatically selects and saves the best estimator.
-
-6. **Flask Deployment**  
+5. **Flask Deployment**  
    - Web interface to collect user inputs.
    - Predicts and displays math score in real-time.
    - Routes:
      - `/` — index page
      - `/predict` — form submission and result display
 
-7. **Modular Project Structure**
+6. **Modular Project Structure**
    - `src/` contains components:
      - `data_ingestion.py`, `data_transformation.py`, `model_trainer.py`, `predict_pipeline.py`
    - `logger.py` and `exception.py` for clean debugging
@@ -93,7 +89,7 @@ Go to: [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 | Lasso Regression | 3.95  | 5.22   | 0.869  |
 | ElasticNet       | 3.94  | 5.21   | 0.870  |
 
-> Ridge Regression was selected due to its slightly better regularization performance.
+>  Linear Regression Regression was selected 
 
 ---
 
